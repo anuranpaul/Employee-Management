@@ -1,0 +1,27 @@
+<div class="employee-form-container">
+  <h2>Update Employee</h2>
+  <form [formGroup]="updateEmployeeForm">
+    <label for="employeeId">Employee ID</label>
+    <input id="employeeId" formControlName="employeeId" type="text" readonly />
+
+    <label for="firstName">First Name</label>
+    <input id="firstName" formControlName="firstName" type="text" required />
+
+    <label for="lastName">Last Name</label>
+    <input id="lastName" formControlName="lastName" type="text" required />
+
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email" required />
+
+    <label for="age">Age</label>
+    <input id="age" formControlName="age" type="number" required />
+
+    <label for="experience">Experience (Years)</label>
+    <input id="experience" formControlName="experience" type="number" required />
+
+    <div class="button-group">
+      <button type="button" (click)="onNoClick()" class="close-btn">Cancel</button>
+      <button type="button" (click)="onSaveClick()" class="save-btn" [disabled]="!updateEmployeeForm.valid">Save</button>
+    </div>
+  </form>
+</div>

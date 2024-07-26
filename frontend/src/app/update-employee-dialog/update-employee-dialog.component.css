@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "GeistSans-Semi";
+  src: url(../../assets/fonts/Geist-SemiBold.otf) format("opentype");
+}
+
+
+.employee-form-container {
+  background-color: #060e1d;
+  color: #fffff0;
+  padding: 20px;
+}
+
+.employee-form-container h2 {
+  font-family: 'GeistSans-Semi';
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.employee-form-container label {
+  font-family: 'GeistMono-Medium';
+  display: block;
+  margin-top: 10px;
+}
+
+.employee-form-container input {
+  color: black;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #06191d;
+  border-radius: 4px;
+  font-family: 'GeistMono-Medium';
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'GeistMono-Medium';
+}
+
+.save-btn {
+  background-color: green;
+  color: #fffff0;
+}
+
+.close-btn {
+  background-color: #ccc;
+  color: #000;
+}

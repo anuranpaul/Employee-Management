@@ -1,0 +1,147 @@
+:host {
+  display: block;
+  overflow: hidden; 
+}
+
+.home-container {
+  margin-top: 60px;
+  height: 92vh;
+  background-color: #060e1d;
+  padding: 2rem;
+  overflow-y: hidden;
+}
+
+.table-container {
+  border: 1px solid #ca0000;
+  overflow: hidden;
+  border-radius: 25px; 
+}
+
+.employee-table {
+  border: 1px solid #ca0000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ca0000;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.employee-table th {
+  letter-spacing: 0.3em;
+  font-family: "GeistSans-Regular", sans-serif;
+  color: #fffff0;
+}
+
+.employee-table tr {
+  font-family: "GeistMono-Medium", sans-serif;
+  color: #fffff0;
+  letter-spacing: 0.05em;
+}
+
+
+
+.update-btn,
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.update-btn i,
+.delete-btn i {
+  color: #fffff0;
+  font-size: 20px;
+}
+
+.update-btn:hover i,
+.delete-btn:hover i {
+  color: #ca0000;
+}
+
+.update-btn,
+.delete-btn {
+  margin: 0 10px;
+}
+
+.button-8 {
+  background-color: #ca0000;
+  border-radius: 3px;
+  border: 1px solid #d30000;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fffff0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "GeistSans-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #ff3c3c;
+  color: #fffff0;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 2px rgba(0, 149, 255, 0.15);
+}
+
+.button-8:active {
+  background-color: #ff3c3c;
+  box-shadow: none;
+  color: #fffff0;
+}
+
+.pagination-container {
+  position: fixed; 
+  bottom: 30px; 
+  left: 35px; 
+  /* right: 10px; */
+  width: 95%; 
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px; 
+  background-color: #060E1D; 
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  margin: 0; 
+  background-color: #ca0000;
+  color: #fffff0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-btn:disabled {
+  background-color: #ff7d7d;
+  cursor: not-allowed;
+}
+
+.pagination-btn i {
+  margin: 0 5px;
+}
