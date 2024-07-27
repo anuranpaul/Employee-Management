@@ -1,6 +1,15 @@
 <div class="home-container">
-  <button class="button-8" (click)="openAddEmployeeDialog()">Add Employee</button>
-  
+  <div class="header-container">
+    <button class="button-8" (click)="openAddEmployeeDialog()">
+      Add Employee
+    </button>
+    <div class="search-box">
+      <input class="search-text" type="text" placeholder="Search Employee" />
+      <a href="#" class="search-btn">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+  </div>
   <div class="table-container">
     <table class="employee-table">
       <tr>
@@ -23,7 +32,10 @@
           <button class="update-btn" (click)="openUpdateDialog(employee)">
             <i class="fa-solid fa-pen-to-square" title="Edit"></i>
           </button>
-          <button class="delete-btn" (click)="confirmDelete(employee.employeeId)">
+          <button
+            class="delete-btn"
+            (click)="confirmDelete(employee.employeeId)"
+          >
             <i class="fas fa-solid fa-trash" title="Delete"></i>
           </button>
         </td>
@@ -31,15 +43,19 @@
     </table>
   </div>
   <div class="pagination-container">
-    <button class="pagination-btn" (click)="previousPage()" [disabled]="currentPage === 1">
-      <i class="fa-solid fa-arrow-left"></i> 
+    <button
+      class="pagination-btn"
+      (click)="previousPage()"
+      [disabled]="currentPage === 1"
+    >
+      <i class="fa-solid fa-arrow-left"></i>
     </button>
-    <button class="pagination-btn" (click)="nextPage()" [disabled]="currentPage === totalPages">
-       <i class="fa-solid fa-arrow-right"></i>
+    <button
+      class="pagination-btn"
+      (click)="nextPage()"
+      [disabled]="currentPage === totalPages"
+    >
+      <i class="fa-solid fa-arrow-right"></i>
     </button>
   </div>
-  
 </div>
-
-
-

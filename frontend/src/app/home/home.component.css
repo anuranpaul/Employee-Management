@@ -1,6 +1,6 @@
 :host {
   display: block;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .home-container {
@@ -14,7 +14,7 @@
 .table-container {
   border: 1px solid #ca0000;
   overflow: hidden;
-  border-radius: 25px; 
+  border-radius: 25px;
 }
 
 .employee-table {
@@ -41,8 +41,6 @@
   color: #fffff0;
   letter-spacing: 0.05em;
 }
-
-
 
 .update-btn,
 .delete-btn {
@@ -114,20 +112,20 @@
 }
 
 .pagination-container {
-  position: fixed; 
-  bottom: 30px; 
-  left: 35px; 
+  position: fixed;
+  bottom: 30px;
+  left: 35px;
   /* right: 10px; */
-  width: 95%; 
+  width: 95%;
   display: flex;
-  justify-content: space-between; 
-  padding: 10px; 
-  background-color: #060E1D; 
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #060e1d;
 }
 
 .pagination-btn {
   padding: 8px 16px;
-  margin: 0; 
+  margin: 0;
   background-color: #ca0000;
   color: #fffff0;
   border: none;
@@ -144,4 +142,41 @@
 
 .pagination-btn i {
   margin: 0 5px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.search-text {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 200px;
+}
+
+.search-btn {
+  background-color: #ff3c3c;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #ca0000;
+}
+
+.search-btn i {
+  font-size: 16px;
 }
