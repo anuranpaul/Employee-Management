@@ -21,6 +21,10 @@ export class EmployeeService {
     return this.http.get<any[]>(`${this.apiUrl}/view`);
   }
 
+  mergeTest(){
+    console.log('Merge test - main ')
+  }
+
   updateEmployee(employee : any){
     console.log('Updating employee: ', employee);
     return this.http.put<any>(`${this.apiUrl}/update`, employee);
