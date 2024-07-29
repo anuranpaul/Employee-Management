@@ -21,6 +21,11 @@ export class EmployeeService {
     return this.http.get<any[]>(`${this.apiUrl}/view`);
   }
 
+  getEmployeeById(employeeId : string): Observable<any> {
+    console.log('Fetching employee with id: ', employeeId);
+    return this.http.get<any>(`${this.apiUrl}/view/${employeeId}`);
+  }
+
   updateEmployee(employee : any){
     console.log('Updating employee: ', employee);
     return this.http.put<any>(`${this.apiUrl}/update`, employee);
