@@ -5,11 +5,12 @@ import { MatDialog } from '@angular/material/dialog';
 import { UpdateEmployeeDialogComponent } from '../update-employee-dialog/update-employee-dialog.component';
 import { AddEmployeeDialogComponent } from '../add-employee-dialog/add-employee-dialog.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
   currentPage: number = 1;
   itemsPerPage: number = 8;
   totalPages: number = 1;
+  searchTerm: string = '';
 
   constructor(
     private employeeService: EmployeeService,
@@ -144,5 +146,31 @@ export class HomeComponent implements OnInit {
         );
       }
     });
+  }
+
+  searchEmployee() {
+    if (this.searchTerm.trim() !== '') {
+      this.employeeService.getEmployeeById(this.searchTerm).subscribe(
+        (response) => {
+          console.log('Employee fetched successfully:', response);
+          this.employees = [response];
+          this.displayedEmployees = [response];
+          this.totalPages = 1;
+          this.currentPage = 1;
+        },
+        (error) => {
+          console.error('Error fetching the employee', error);
+          this.snackBar.open('Employee not found', 'Close', {
+            duration: 3000,
+          });
+          this.employees = [];
+          this.displayedEmployees = [];
+          this.totalPages = 1;
+          this.currentPage = 1;
+        }
+      );
+    } else {
+      this.getAllEmployees();
+    }
   }
 }

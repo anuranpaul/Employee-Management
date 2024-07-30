@@ -4,10 +4,10 @@
       Add Employee
     </button>
     <div class="search-box">
-      <input class="search-text" type="text" placeholder="Search Employee" />
-      <a href="#" class="search-btn">
+      <input class="search-text" type="text" placeholder="Search Employee" [(ngModel)]="searchTerm" />
+      <button class="search-btn" (click)="searchEmployee()">
         <i class="fas fa-search"></i>
-      </a>
+      </button>
     </div>
   </div>
   <div class="table-container">
