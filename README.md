@@ -9,9 +9,6 @@ This project is a simple Employee CRUD (Create, Read, Update, Delete) API that a
 - [Backend Endpoints](#backend-endpoints)
 - [Frontend](#frontend)
 - [Database](#database)
-- [Setup Instructions](#setup-instructions)
-- [Usage](#usage)
-- [License](#license)
 
 ## Features
 
