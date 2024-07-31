@@ -22,7 +22,7 @@ export class EmployeeService {
   }
 
   getEmployeeById(employeeId : string): Observable<any> {
-    console.log('Fetching employee with id: ', employeeId);
+    console.log('Fetching employee ID: ', employeeId);
     return this.http.get<any>(`${this.apiUrl}/view/${employeeId}`);
   }
 
