@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
 
-  private apiUrl = 'http://localhost:9095/api/employee';
+  private apiUrl = 'http://localhost:8085/employee/api/employee';
 
   constructor(private http:HttpClient) { }
 
